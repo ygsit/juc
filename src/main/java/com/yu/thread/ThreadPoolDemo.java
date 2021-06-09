@@ -18,10 +18,10 @@ public class ThreadPoolDemo {
         ExecutorService executorService = new ThreadPoolExecutor(
                 2, //常驻线程数
                 processors + 1, //最大线程数,最优是配置cpu线程数+1
-                2L,
+                2L, //多余的空闲线程存活时间
                 TimeUnit.SECONDS,
                 new LinkedBlockingQueue<>(3), //默认Integer.MAX_VALUE  21亿
-                Executors.defaultThreadFactory(),
+                Executors.defaultThreadFactory(), //生成线程的线程工厂
                 //四大策略：默认AbortPolicy
                 //new ThreadPoolExecutor.AbortPolicy()：超出抛异常
                 //new ThreadPoolExecutor.CallerRunsPolicy()：超出回调，谁让来的找谁
