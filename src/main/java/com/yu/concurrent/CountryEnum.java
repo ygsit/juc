@@ -20,7 +20,7 @@ public enum CountryEnum {
         this.countryName = countryName;
     }
 
-    public static  CountryEnum countryEnumForeach(int value){
+    public static CountryEnum countryEnumForeach(int value){
         CountryEnum[] countryEnums = CountryEnum.values();
         for (CountryEnum countryEnum : countryEnums) {
             if(countryEnum.getCountryId() == value) {

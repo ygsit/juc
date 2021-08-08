@@ -47,7 +47,7 @@ public class ThreadPoolDemo {
     }
 
     private static void initPool() {
-        //        ExecutorService executorService = Executors.newFixedThreadPool(5);//一个银行网点，5个受理业务的窗口
+//        ExecutorService executorService = Executors.newFixedThreadPool(5);//一个银行网点，5个受理业务的窗口
 //        ExecutorService executorService = Executors.newSingleThreadExecutor();//一个银行网点，1个受理业务的窗口
         ExecutorService executorService = Executors.newCachedThreadPool(); //一个银行网点，可扩展受理业务的窗口
         try {

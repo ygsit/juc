@@ -1,4 +1,4 @@
-package com.guc.thread;
+package com.yu.thread;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
