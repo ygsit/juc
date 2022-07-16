@@ -12,7 +12,7 @@ public class SingletonDemo {
         System.out.println(Thread.currentThread().getName() + "\t初始化对象");
     }
 
-    //DCL双端加锁机制 (指令重排对象初始化可能会出问题)
+    //DCL双端检锁机制 (指令重排对象初始化可能会出问题)
     public static SingletonDemo getInstance() {
         if (singletonDemo == null) {
             synchronized (SingletonDemo.class) {
